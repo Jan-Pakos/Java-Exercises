@@ -15,6 +15,21 @@ public class FizzBuzz {
      */
     public List<String> generate(int n) {
         // TODO: Implement the FizzBuzz logic
-        return new ArrayList<>();
+        List<String> result = new ArrayList<>();
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                result.add("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                result.add("Fizz");
+            }
+            else if (i % 5 == 0) {
+                result.add("Buzz");
+            }
+            else {
+                result.add(String.valueOf(i));
+            }
+        }
+        return result;
     }
 }
