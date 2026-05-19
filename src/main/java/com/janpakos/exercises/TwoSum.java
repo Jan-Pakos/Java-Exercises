@@ -12,6 +12,13 @@ public class TwoSum {
      */
     public int[] findTwoSum(int[] nums, int target) {
         // TODO: Implement the TwoSum logic
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (target == nums[i] + nums[j]) {
+                    return new int[]{i + 1, j + 1};
+                }
+            }
+        }
         return new int[]{};
     }
 }
