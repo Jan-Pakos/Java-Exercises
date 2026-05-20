@@ -1,4 +1,6 @@
 package com.janpakos.exercises;
 
-class Movie {
+public record Movie (
+        String title
+) {
 }
